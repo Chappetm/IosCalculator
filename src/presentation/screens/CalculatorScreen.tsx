@@ -8,6 +8,7 @@ export const CalculatorScreen = () => {
     const {
         number,
         prevNumber,
+        formula,
         buildNumber,
         clean,
         deleteOperation,
@@ -26,7 +27,7 @@ export const CalculatorScreen = () => {
                     adjustsFontSizeToFit
                     numberOfLines={1}
                     style={styles.mainResult}
-                >{number}</Text>
+                >{formula}</Text>
 
                 <Text style={styles.subResult} >{(prevNumber === '0') ? ' ' : prevNumber}</Text>
             </View>
